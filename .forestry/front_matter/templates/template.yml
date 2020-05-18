@@ -19,10 +19,25 @@ fields:
   name: author
   label: author
   description: Autor desse post
+  config:
+    required: true
 - type: list
   name: categories
   label: categories
   description: Categoria
+  config:
+    use_select: true
+    source:
+      type: simple
+    options:
+    - News
+    - Web
+    - Amazonas
+    - Policial
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
 - type: file
   name: image
   label: image
