@@ -34,3 +34,5 @@ fields:
   name: hidden
   label: hidden
   description: Esconder do destaque?
+pages:
+- _posts/lorem-ipsum.md
