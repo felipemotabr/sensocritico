@@ -5,21 +5,32 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: post
+  config:
+    required: false
+  hidden: true
 - type: text
   name: title
   label: title
+  config:
+    required: true
+  description: Título do post
 - type: text
   name: author
   label: author
+  description: Autor desse post
 - type: list
   name: categories
   label: categories
+  description: Categoria
 - type: file
   name: image
   label: image
 - type: boolean
   name: featured
   label: featured
+  description: Destaque?
 - type: boolean
   name: hidden
   label: hidden
+  description: Esconder do destaque?
