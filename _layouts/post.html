@@ -21,25 +21,40 @@ post_class: post-template
         <div class="col-md-9 flex-first flex-md-unordered">
             <div class="mainheading">
 
-                <!-- Author Box -->
-                {% if page.author %}
-                <div class="row post-top-meta">
-                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
-                        {% if author.avatar %}
-                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
-                        {% else %}
-                        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
-                        {% endif %}
-                    </div>
-                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
-                        <span class="author-description">{{ author.description }}</span>
-                    </div>
-                </div>
-                {% endif %}
-
                 <!-- Post Title -->
                 <h1 class="posttitle">{{ page.title }}</h1>
+
+                 <!-- Author Box -->
+                 {% if page.author %}
+                 <div class="row post-new-meta">
+
+                     <div class="media">
+                        <a href="#" class="pull-left">
+                            {% if author.avatar %}
+                            <img class="img-circle post-avatar" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+                            {% else %}
+                            <img class="img-circle post-avatar" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                            {% endif %}
+
+                        </a>
+                        <div class="media-body">
+                            <span class="text-muted pull-right post-author">
+                                {{ author.display_name }}
+                            </span>
+                            <p>
+                                <small>
+                                    <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{% include date.html %}</time></span>           
+                                    {% if page.last_modified_at %}
+                                    (Atualizado: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                                    {% endif %}
+                                </small>
+
+                            </p>
+                        </div>
+                    </div>
+
+                 </div>
+                 {% endif %}
 
             </div>
 
@@ -119,6 +134,24 @@ post_class: post-template
                 </ul>
             </div>
             <!-- End Tags -->
+
+            
+                <!-- Author Box -->
+                {% if page.author %}
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                        {% if author.avatar %}
+                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+                        {% else %}
+                        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                        {% endif %}
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <span class="link-dark">{{ author.display_name }}</span> {% if author.twitter %} <a target="_blank" href="{{ author.twitter }}" class="btn follow">Siga</a>{% endif %}
+                        <span class="author-description">{{ author.description }}</span>
+                    </div>
+                </div>
+                {% endif %}
 
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">

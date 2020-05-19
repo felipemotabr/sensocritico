@@ -953,3 +953,20 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
+.post-new-meta {
+    margin-top: 28px;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+.post-new-meta .post-avatar {
+    width: 44px;
+    height: 49px;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+.post-new-meta .post-author{
+    font-size: 14px;
+    color: #555;
+}
