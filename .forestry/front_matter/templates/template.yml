@@ -21,6 +21,17 @@ fields:
   description: Autor desse post
   config:
     required: true
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: MM/DD/YYYY h:mm A ZZ
+  default: ''
 - type: list
   name: categories
   label: categories
