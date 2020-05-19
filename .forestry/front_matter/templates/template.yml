@@ -30,8 +30,8 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-    export_format: MM/DD/YYYY h:mm A ZZ
-  default: ''
+    export_format: ''
+  default: now
 - type: list
   name: categories
   label: categories
