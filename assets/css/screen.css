@@ -46,7 +46,11 @@ pre {
 
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #fff!important
+    color: #fff!important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    text-decoration: underline;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -76,7 +80,7 @@ pre {
 .site-content {
     min-height: 60vh;
     padding-top: 1.5rem;
-    margin-top: 57px;
+    margin-top: 88px;
     transition: all 0.4s;
 }
 
@@ -322,11 +326,18 @@ span.post-read-more a:hover {
     display: inline-block;
     margin-top: 3px;
     cursor: pointer;
+    color: #fff
+}
+
+.topHeader .navbar-brand img {
+    max-height: 50px!important;
+    margin-right: 5px;
 }
 
 .mediumnavigation .navbar-brand img {
     max-height: 30px;
     margin-right: 5px;
+    transition: 0.4s ease-in-out;
 }
 
 .mainheading h1.sitetitle {
@@ -350,8 +361,10 @@ span.post-read-more a:hover {
     background: #fff;
 }
 
-.link-dark {
-    color: rgba(0, 0, 0, .8);
+span.link-dark {
+    font-weight: 900;
+    color: #4b4b4b;
+    font-size: 20px;
 }
 
 .article-post {
@@ -639,6 +652,22 @@ ul.tags li a:hover {
 
 .form-control::-ms-input-placeholder {
     color: rgba(0, 0, 0, .5);
+}
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #333;
+  -webkit-text-fill-color: #eee;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.1) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .authorpage h1 {
