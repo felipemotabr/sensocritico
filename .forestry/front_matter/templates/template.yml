@@ -21,6 +21,17 @@ fields:
   description: Autor desse post
   config:
     required: true
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: ''
+  default: now
 - type: list
   name: categories
   label: categories
@@ -51,4 +62,4 @@ fields:
   description: Esconder do destaque?
 pages:
 - _posts/2020-05-18-lorem-ipsum.md
-- _posts/2020-05-19-o-que-e-lorem-ipsum.md
+- _posts/o-que-e-lorem-ipsum.md
