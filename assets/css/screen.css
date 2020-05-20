@@ -361,6 +361,14 @@ span.post-read-more a:hover {
     background: #fff;
 }
 
+.footer .social a {
+    color: #222;
+}
+.footer .social a:hover {
+    color: #999;
+}
+
+
 span.link-dark {
     font-weight: 900;
     color: #4b4b4b;
@@ -968,26 +976,3 @@ iframe {
     font-size: 14px;
     color: #555;
 }
-
-.jumbotron {
-    background-position: 50%;
-    background-size: cover;
-    z-index: 1;
-    position: relative;
-    padding: 0;
-
-}
-.jumbotron .card-title {
-    text-shadow: 0 1px 3px rgba(0,0,0,.4);
-}
-
-.overlay {
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0.50773812943146) 0%, rgba(0,0,0,0) 48%);
-    height: 100%;
-    max-width: 100%;
-    padding-top: 25%;
-    padding-left: 4%;
-    padding-bottom: 4%;
-    padding-right: 4%;
-  }
