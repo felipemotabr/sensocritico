@@ -13,11 +13,11 @@ fields:
   type: text
   config:
     required: false
-  label: text-call
+  label: Chamada
   description: Chamada
 - type: text
   name: title
-  label: title
+  label: Título
   config:
     required: true
   description: Título do post
@@ -25,18 +25,12 @@ fields:
   type: text
   config:
     required: false
-  label: lead
+  label: Subtítulo
   description: Subtítulo
-- type: text
-  name: author
-  label: author
-  description: Autor desse post
-  config:
-    required: true
 - name: date
   type: datetime
-  label: date
-  description: ''
+  label: Data
+  description: Data da publicação
   config:
     required: true
     date_format: 
@@ -46,8 +40,7 @@ fields:
   default: now
 - type: list
   name: categories
-  label: categories
-  description: Categoria
+  label: Categoria
   config:
     use_select: true
     source:
@@ -60,19 +53,36 @@ fields:
 - name: tags
   type: tag_list
   default: []
-  label: tags
+  label: Tags
+  description: Palavras-chaves
 - type: file
   name: image
-  label: image
+  label: Imagem
+  description: Enviar imagem
 - type: boolean
   name: featured
-  label: featured
-  description: Destaque?
+  label: Destaque
 - type: boolean
   name: hidden
   label: hidden
   description: Esconder da listagem
   hidden: true
+- name: author
+  type: select
+  default: redacao
+  config:
+    required: true
+    options:
+    - felipe
+    - flavia
+    - patrick
+    - redacao
+    source:
+      type: simple
+      section: jekyll-posts
+      file: 
+      path: ''
+  label: Autor deste post
 pages:
 - _posts/2020-05-18-lorem-ipsum.md
 - equipe.md
