@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Lorem Ipsum
+title: Lorem Ipsum is simply dummy text of the printing
+lead: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
 author: john
 categories:
 - News
