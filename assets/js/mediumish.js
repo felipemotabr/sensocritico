@@ -75,13 +75,14 @@ jQuery(document).ready(function($){
     setInterval(function() {
         if (didScroll) {
             hasScrolled();
+            topBar();
             didScroll = false;
         }
     }, 250);
 
     function hasScrolled() {
         var st = $(this).scrollTop();
-        
+
         // Make sure they scroll more than delta
         if(Math.abs(lastScrollTop - st) <= delta)
             return;
@@ -103,6 +104,17 @@ jQuery(document).ready(function($){
 
         lastScrollTop = st;
     }
+    $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+  
+       //>=, not <=
+      if (scroll >= 100) {
+          //clearHeader, not clearheader - caps H
+          $(".navbar").removeClass("topHeader");
+      } else {
+          $(".navbar").addClass("topHeader");
+      }
+  });
         
     $('.site-content').css('margin-top', $('header').outerHeight() + 'px');  
     
