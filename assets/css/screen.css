@@ -361,6 +361,14 @@ span.post-read-more a:hover {
     background: #fff;
 }
 
+.footer .social a {
+    color: #222;
+}
+.footer .social a:hover {
+    color: #999;
+}
+
+
 span.link-dark {
     font-weight: 900;
     color: #4b4b4b;
