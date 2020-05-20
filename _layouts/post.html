@@ -23,7 +23,7 @@ post_class: post-template
 
                 <!-- Post Title -->
                 <h1 class="posttitle">{{ page.title }}</h1>
-
+                <h2 class="lead">{{ page.lead }}</h2>
                  <!-- Author Box -->
                  {% if page.author %}
                  <div class="row post-new-meta">
@@ -35,7 +35,6 @@ post_class: post-template
                             {% else %}
                             <img class="img-circle post-avatar" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
                             {% endif %}
-
                         </a>
                         <div class="media-body">
                             <span class="text-muted pull-right post-author">
@@ -156,10 +155,10 @@ post_class: post-template
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
-            <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
+            <a class="prev d-block col-md-6" href="{{ page.previous.url| relative_url }}"> &laquo; {{page.previous.title}}</a>
             {% endif %}
             {% if page.next.url %}
-            <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}} &raquo; </a>
+            <a class="next d-block col-md-6 text-lg-right" href="{{ page.next.url| relative_url }}">{{page.next.title}} &raquo; </a>
             {% endif %}
             <div class="clearfix"></div>
             </div>
