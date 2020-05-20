@@ -15,6 +15,12 @@ fields:
   config:
     required: true
   description: Título do post
+- name: lead
+  type: text
+  config:
+    required: false
+  label: lead
+  description: Subtítulo
 - type: text
   name: author
   label: author
