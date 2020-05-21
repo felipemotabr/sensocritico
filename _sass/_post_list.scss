@@ -1,0 +1,19 @@
+.card {
+    flex-direction: initial!important;
+    border: none!important;
+    a:hover {
+        text-decoration: underline;
+    }
+    .maxthumb {
+        padding: 0;
+    }
+    .card-meta {
+        font-size: 14px;
+        font-weight: 700;
+        color: #868686;
+        margin-bottom: 8px;
+    }
+    .card-body {
+        padding-top: 0.5rem;
+    }
+}

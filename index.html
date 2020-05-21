@@ -70,11 +70,17 @@ title: Home
 
     <div class="row listrecent">
 
-        {% for post in paginator.posts %}
+        <div class="col-lg-8 col-md-8">
+            {% for post in paginator.posts %}
 
-        {% include postbox.html %}
+            {% include postbox.html %}
 
-        {% endfor %}
+            {% endfor %}
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+            <img src="https://via.placeholder.com/350" alt="Banner">
+        </div>
 
     </div>
 
