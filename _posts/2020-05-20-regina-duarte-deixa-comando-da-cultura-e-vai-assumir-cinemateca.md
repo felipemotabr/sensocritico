@@ -3,7 +3,7 @@ layout: post
 date: 2020-05-20 21:00:14 -0300
 tags:
 - Regina Duarte
-author: redacao
+author: felipe
 text-call: Fim do casamento
 title: Regina Duarte deixa comando da Cultura e vai assumir Cinemateca
 lead: Atriz assumiu a pasta em 4 de março com a missão de 'pacificar' o setor. Segundo
