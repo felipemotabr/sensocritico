@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-05-20 21:00:14 -0300
+date: 2020-05-21T00:00:14.000+00:00
 tags:
 - Regina Duarte
 author: felipe
@@ -11,7 +11,7 @@ lead: Atriz assumiu a pasta em 4 de março com a missão de 'pacificar' o setor.
 categories:
 - News
 image: assets/images/regina-duarte-2020-05-21.jpg
-featured: false
+featured: true
 hidden: false
 
 ---
