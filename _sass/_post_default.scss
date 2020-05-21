@@ -1,4 +1,6 @@
 
+/// Defalut
+
 .jumbotron {
     background-position: 50%;
     background-size: cover;
@@ -11,6 +13,16 @@
         text-shadow: 0 1px 3px rgba(0,0,0,.4);
         z-index: 2;
     }
+    .overlay {
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(39, 39, 39, 0.508) 0%, rgba(0,0,0,0) 68%);
+        height: 100%;
+        max-width: 100%;
+        padding-top: 25%;
+        padding-left: 4%;
+        padding-bottom: 4%;
+        padding-right: 4%;
+      }
 
 }
 
@@ -28,14 +40,3 @@
         transform: scale(1.2);
     }
 }
-
-.overlay {
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(39, 39, 39, 0.508) 0%, rgba(0,0,0,0) 68%);
-    height: 100%;
-    max-width: 100%;
-    padding-top: 25%;
-    padding-left: 4%;
-    padding-bottom: 4%;
-    padding-right: 4%;
-  }
