@@ -13,7 +13,7 @@ lead: As agências estarão abertas entre 8h e 12h. Serão atendidas as pessoas 
 categories:
 - News
 image: assets/images/caixa-2020-05-23.jpg
-featured: false
+featured: true
 hidden: false
 
 ---
