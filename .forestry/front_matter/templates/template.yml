@@ -16,7 +16,7 @@ fields:
   label: Chamada
 - type: text
   name: title
-  label: Título
+  label: Manchete
   config:
     required: true
   description: Título do post
