@@ -9,12 +9,11 @@ title: Home
 ================================================== -->
 {% for post in site.posts limit:1 %}
 <!-- begin post -->
-    {% assign author = site.authors[post.author] %}
     {% if post.featured == true %}
     <a href="{{ site.baseurl }}{{ post.url }}">
         <div class="jumbotron text-white rounded bg-dark">
             <div class="child" style="background-image: url({% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %});"></div>
-                <div class="overlay">
+            <div class="overlay">
                 <div class="col-md-6 px-0 card-title">
                     <h1 class="display-5">{{ post.title }}</h1>
                     <p class="lead my-3">
@@ -25,8 +24,7 @@ title: Home
                         {% endif %}
                     </p>
                 </div>
-                </div>
-        
+            </div>
         </div>
     </a>
   {% endif %}
@@ -72,9 +70,9 @@ title: Home
 
         <div class="col-lg-8 col-md-8">
             {% for post in paginator.posts %}
-
-            {% include postbox.html %}
-
+      
+                    {% include postbox.html %}
+             
             {% endfor %}
         </div>
 
