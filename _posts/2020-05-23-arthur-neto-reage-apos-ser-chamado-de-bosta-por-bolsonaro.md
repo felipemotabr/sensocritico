@@ -5,7 +5,7 @@ tags:
 - presidente
 - reuniao
 - prefeito
-author: redacao
+author: flavia
 text-call: Entre ofensas
 title: Arthur Neto reage após ser chamado de 'bosta' por Bolsonaro
 lead: "“Os insultos do presidente Bolsonaro, dirigidos a mim e a outros homens públicos,
