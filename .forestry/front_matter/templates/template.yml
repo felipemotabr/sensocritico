@@ -44,10 +44,13 @@ fields:
     source:
       type: simple
     options:
-    - News
-    - Web
-    - Amazonas
-    - Policial
+    - Esportes
+    - Economia
+    - Variedades
+    - Política
+    - Internacional
+    - Tecnologia
+    - Saúde
 - name: tags
   type: tag_list
   default: []
