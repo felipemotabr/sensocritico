@@ -11,7 +11,7 @@ title: Agências da Caixa abrem neste sábado para pagamento do auxílio emergen
 lead: As agências estarão abertas entre 8h e 12h. Serão atendidas as pessoas que fazem
   aniversário em maio, junho e julho.
 categories:
-- News
+- Economia
 image: assets/images/caixa-2020-05-23.jpg
 featured: true
 hidden: false
