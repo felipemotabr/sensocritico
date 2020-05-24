@@ -12,7 +12,7 @@ lead: "“Os insultos do presidente Bolsonaro, dirigidos a mim e a outros homens
   representam um verdadeiro “strip-tease moral” feito por quem não tem a mais mínima
   condição de governar o Brasil”, disse Arthur."
 categories:
-- News
+- Política
 image: assets/images/artur-neto-2020-05-23.jpg
 featured: true
 hidden: false
