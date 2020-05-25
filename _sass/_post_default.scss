@@ -12,6 +12,16 @@
     .card-title {
         text-shadow: 0 1px 3px rgba(0,0,0,.4);
         z-index: 2;
+
+        h1 {
+            font-size: 2.4rem;
+            line-height: 2.5rem;
+        }
+        .lead {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+
     }
     .overlay {
         background: rgb(0,0,0);
@@ -24,6 +34,22 @@
         padding-right: 4%;
       }
 
+}
+
+@media (max-width:999px) {
+    .jumbotron {  
+        margin-bottom: 2rem;  
+        .card-title {
+            h1 {
+                font-size: 1.8rem;
+                line-height: 1.1;
+            }
+            .lead {
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+            }
+        }
+    }
 }
 
 .child {

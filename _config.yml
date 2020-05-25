@@ -10,19 +10,11 @@ google_analytics: 'UA-167317800-1'
 disqus: 'sensocritico'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
-permalink: /:title/
+permalink: /:categories/:year/:month/:day/:title
 
 # Authors
 authors:
-  sal:
-    name: Sal
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  Felipe:
+  felipe:
     name: Felipe
     display_name: Felipe Mota    
     avatar: 'assets/images/avatar.png'
@@ -30,11 +22,34 @@ authors:
     email: felipemotacontato@gmail.com
     twitter: https://twitter.com/felipemotabr
     description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+  flavia:
+    name: Flavia
+    display_name: Flavia Moura
+    avatar: 'assets/images/avatar.png'
+    email: 
+    twitter: 
+    description: ""
+  redacao:
+    name: Redação
+    display_name: Redação
+    avatar: 'assets/images/avatar.png'
+    email: redacao@sensocriticoonline.com.br
+    twitter: 
+    description: ""
+
 
 # Social Profiles
-instagram_username: 
-twitter_username:    
-facebook_username:  
+instagram_username: sensocriticoonline
+twitter_username:   
+facebook_username: sensocriticoonline
+
+collections:
+  category:
+    output: true
+    permalink: :slug/
+
+    
+
 
 # Plugins
 plugins:

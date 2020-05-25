@@ -17,6 +17,7 @@ post_class: post-template
 
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
+        
         <div class="col-md-9 flex-first flex-md-unordered">
             <div class="mainheading">
                 <!-- Post Title -->
@@ -24,8 +25,10 @@ post_class: post-template
                 <h2 class="lead">{{ page.lead }}</h2>
                  <!-- Author Box -->
                  {% if page.author %}
+
                  <div class="row post-new-meta">
                      <div class="media">
+                        {% unless page.author == "redacao" %}
                         <a href="#" class="pull-left">
                             {% if author.avatar %}
                             <img class="img-circle post-avatar" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
@@ -33,6 +36,7 @@ post_class: post-template
                             <img class="img-circle post-avatar" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
                             {% endif %}
                         </a>
+                        {% endunless %}
                         <div class="media-body">
                             <span class="text-muted pull-right post-author">
                                 {{ author.display_name }}
@@ -48,6 +52,7 @@ post_class: post-template
                         </div>
                     </div>
                  </div>
+
                  {% endif %}
             </div>
 
@@ -128,6 +133,7 @@ post_class: post-template
 
             <!-- Author Box -->
             {% if page.author %}
+            {% unless page.author == "redacao" %}
             <div class="row post-top-meta">
                 <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
                     {% if author.avatar %}
@@ -141,6 +147,7 @@ post_class: post-template
                     <span class="author-description">{{ author.description }}</span>
                 </div>
             </div>
+            {% endunless %}
             {% endif %}
 
             <!-- Prev/Next -->
