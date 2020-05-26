@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-05-23 11:54:52 -0300
+date: 2020-05-23T14:54:52.000+00:00
 tags:
 - presidente
 - reuniao
@@ -12,7 +12,7 @@ lead: "“Os insultos do presidente Bolsonaro, dirigidos a mim e a outros homens
   representam um verdadeiro “strip-tease moral” feito por quem não tem a mais mínima
   condição de governar o Brasil”, disse Arthur."
 categories:
-- Política
+- Politica
 image: assets/images/artur-neto-2020-05-23.jpg
 featured: true
 hidden: false
