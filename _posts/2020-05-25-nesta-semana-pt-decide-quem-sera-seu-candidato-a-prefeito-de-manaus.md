@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-05-25 10:19:56 -0300
+date: 2020-05-25T13:19:56.000+00:00
 tags:
 - eleição
 - prefeitura
@@ -13,7 +13,7 @@ title: Nesta semana PT decide quem será seu candidato a Prefeito de Manaus
 lead: Estão na disputa o deputado federal José Ricardo, o deputado estadual Sinésio
   Campos e o vereador Cícero Custódio, únicos do PT em cargos eletivos.
 categories:
-- Política
+- Politica
 image: assets/images/elicao-pt-2020-05-25.jpg
 featured: true
 hidden: false
