@@ -50,6 +50,7 @@ fields:
     - Internacional
     - Tecnologia
     - Saude
+    - Politica
 - name: tags
   type: tag_list
   default: []
