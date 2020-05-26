@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-05-25 09:36:35 -0300
+date: 2020-05-25T12:36:35.000+00:00
 tags:
 - coronavirus
 - mortes
@@ -12,7 +12,7 @@ title: Mortes por Covid-19 no AM apresenta queda e casos confirmados já chegam 
 lead: Os casos negativos para Covid-19 somam 36.843, sendo 25.274 em Manaus e 11.569
   no interior do estado.
 categories:
-- Saúde
+- Saude
 image: assets/images/cemiterio-2020-05-25.jpeg
 featured: true
 hidden: false
