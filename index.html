@@ -41,7 +41,7 @@ title: Home
     </div>
     <div class="row">
 
-    {% for post in site.posts offset:1 %}
+    {% for post in site.posts offset:1 limit:2 %}
 
         {% if post.featured == true %}
 
@@ -77,7 +77,7 @@ title: Home
         </div>
 
         <div class="col-lg-4 col-md-4">
-            <img src="https://via.placeholder.com/350" alt="Banner">
+            <!-- <img src="https://via.placeholder.com/350" alt="Banner"> -->
         </div>
 
     </div>
